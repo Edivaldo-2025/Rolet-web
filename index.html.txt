@@ -1,0 +1,56 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpinSight - Análise de Roleta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Painel da Roleta -->
+    <div class="roleta">
+      <svg viewBox="0 0 200 200" class="roleta-img">
+        <!-- Círculo da roleta -->
+        <circle cx="100" cy="100" r="95" fill="white" stroke="black" stroke-width="5"></circle>
+        <!-- Exemplificando 36 números na roleta -->
+        <text x="50" y="30" class="numero">1</text>
+        <text x="80" y="10" class="numero">2</text>
+        <text x="110" y="10" class="numero">3</text>
+        <!-- Adicione todos os números e posições aqui -->
+      </svg>
+    </div>
+
+    <!-- Informações sobre as Dúzias e Colunas -->
+    <div class="informacoes">
+      <div class="duzias">
+        <h3>Dúzias</h3>
+        <ul>
+          <li>1-12</li>
+          <li>13-24</li>
+          <li>25-36</li>
+        </ul>
+      </div>
+      <div class="colunas">
+        <h3>Colunas</h3>
+        <ul>
+          <li>Coluna 1</li>
+          <li>Coluna 2</li>
+          <li>Coluna 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Área de Análise e Jogada -->
+    <div class="analise">
+      <h3>Análise</h3>
+      <p>Aqui aparecerão os números analisados.</p>
+      <button id="atualizar">Atualizar Análise</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

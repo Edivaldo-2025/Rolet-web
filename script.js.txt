@@ -1,0 +1,18 @@
+script.js
+
+
+document.getElementById("atualizar").addEventListener("click", function() {
+  // Exemplo de números que precisam ser destacados
+  const numerosAnalisados = [1, 3, 5, 7, 9];
+
+  // Atualizar números na roleta
+  const numeros = document.querySelectorAll('.numero');
+  numeros.forEach((numero) => {
+    const num = parseInt(numero.textContent);
+    if (numerosAnalisados.includes(num)) {
+      numero.style.fill = "gray"; // Destacar números analisados
+    } else {
+      numero.style.fill = "black"; // Resetar os números não analisados
+    }
+  });
+});
